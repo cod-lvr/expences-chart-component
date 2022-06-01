@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Gochi+Hand&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* ### Primary */
+  ---Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+
+  /* ### Neutral */
+
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+
+  /* ###media-queries */
+  --Mobile: 375px;
+  --Desktop: 1440px;
+
+  /* f-weights */
+  --regular: 400;
+  --bold: 700;
+
+  /* radius */
+  --b-radius: 15px;
+
+  /* main padding */
+  --mob-padd: 2rem 1rem;
+}
+body {
+  font-size: 18px;
+  background-color: var(--Cream);
+  max-width: max-content;
+  padding: 3rem 1rem;
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: var(--Medium-brown);
+}
+/* ### MODIFIRES */
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.smaller {
+  font-weight: var(--bold);
+}
+.small {
+  font-size: 18px;
+  font-weight: var(--regular);
+  margin-bottom: 0.5rem;
+}
+.big {
+  font-size: 24px;
+  font-weight: var(--bold);
+}
+/* #header */
+.header {
+  padding: var(--mob-padd);
+  border-radius: var(--b-radius);
+  color: white;
+  background-color: var(---Soft-red);
+}
+.header.small {
+  color: var(--Very-pale-orange);
+}
+/* #main */
+.main {
+  padding: var(--mob-padd);
+  border-radius: var(--b-radius);
+  background-color: var(--Very-pale-orange);
+  margin: 1rem 0;
+}
+/* #chart */
+#myChart {
+  width: 400px;
+  height: 220px;
+}
+/* main_balance */
+.main__balance {
+  border-top: 2px solid var(--Cream);
+  padding: 2rem 0 0;
+}
+.main__balance .balance__right-container {
+  text-align: right;
+  align-self: flex-end;
+}
+.main__balance .big {
+  font-size: 35px;
+}
+.main__balance .small {
+  color: var(--Medium-brown);
+}
+/* #footer-container */
+.footer-container {
+  position: relative;
+  bottom: 12px;
+  font-size: 15px;
+  text-align: center;
+  margin: 1rem 0;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- cdn for charts lib -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <!-- main script file -->
+    <script src="./script/main.js" defer></script>
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <header class="header flex-row">
+      <div class="header__left-container">
+        <p class="small">My balance</p>
+        <p class="big">$921.48</p>
+      </div>
+      <div class="header__right-container">
+        <img src="./images/logo.svg" alt="logo-image" />
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__chart-container">
+        <header class="chart-container__header">
+          <h1 class="big">Spending - Last 7 days</h1>
+        </header>
+        <!-- using charts.js lib  -->
+        <canvas id="myChart"></canvas>
+      </section>
+
+      <div class="main__balance flex-row">
+        <div class="balance__left-container">
+          <p class="small">Total this month</p>
+          <p class="big">$478.33</p>
+        </div>
+        <div class="balance__right-container">
+          <p class="smaller">+2.4%</p>
+          <p class="small">from last month</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-container">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >.<br />
+      Coded by <a href="#">Ayman Gamal</a>.
+    </footer>
+  </body>
+</html>
