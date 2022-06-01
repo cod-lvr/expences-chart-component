@@ -9,7 +9,7 @@
 }
 :root {
   /* ### Primary */
-  ---Soft-red: hsl(10, 79%, 65%);
+  --Soft-red: hsl(10, 79%, 65%);
   --Cyan: hsl(186, 34%, 60%);
 
   /* ### Neutral */
@@ -45,6 +45,7 @@ a {
   text-decoration: none;
   color: var(--Medium-brown);
 }
+
 /* ### MODIFIRES */
 .flex-row {
   display: flex;
@@ -74,7 +75,7 @@ a {
   padding: var(--mob-padd);
   border-radius: var(--b-radius);
   color: white;
-  background-color: var(---Soft-red);
+  background-color: var(--Soft-red);
 }
 .header.small {
   color: var(--Very-pale-orange);
@@ -113,4 +114,13 @@ a {
   font-size: 15px;
   text-align: center;
   margin: 1rem 0;
+}
+/* ### media -query  */
+@media screen and (min-width: 500px) {
+  body {
+    margin: 0 auto;
+  }
+  .main__balance .big {
+    font-size: 30px;
+  }
 }
